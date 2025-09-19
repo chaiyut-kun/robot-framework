@@ -18,7 +18,8 @@ ${email}           nk@s.com
     
 *** Test Cases ***
 Open Browser
-    # Open Browser    ${BASE_URL}   ${BROWSER}    
+
+    # สร้าง chrome profile สำหรับ debug ใช้ port 9222
     Open Browser  ${BASE_URL}  chrome  options=add_experimental_option("debuggerAddress", "127.0.0.1:9222")
     Sleep   30s
     Maximize Browser Window
