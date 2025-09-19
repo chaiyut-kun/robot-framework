@@ -1,0 +1,19 @@
+1758281732507	geckodriver	INFO	Listening on 127.0.0.1:49217
+1758281735607	mozrunner::runner	INFO	Running command: "C:\\Users\\chwor\\.cache\\selenium\\firefox\\win64\\143.0\\firefox.exe" "--marionette" "--user-data-dir=C:/ ... 8" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\chwor\\AppData\\Local\\Temp\\rust_mozprofileiHY5ma"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1758281738564	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-user-data-dir"
+1758281738676	Marionette	INFO	Listening on port 49232
+WebDriver BiDi listening on ws://127.0.0.1:49218
+Read port: 49232
+1758281738869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1758281752574	Marionette	INFO	Stopped listening on port 49232
+Dynamically enable window occlusion 1
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 105: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 102: Error: Unknown callback
