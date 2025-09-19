@@ -8,7 +8,7 @@ ${BROWSER}         chrome
 ${VALID_PASSWORD}  123
 ${FIRST_NAME}      B
 ${LAST_NAME}       T
-${email}           nk@s.com
+${email}           nk@f.com
 
 # *** Keywords ***
 # Generate New Email
@@ -21,7 +21,7 @@ Open Browser
 
     # สร้าง chrome profile สำหรับ debug ใช้ port 9222
     Open Browser  ${BASE_URL}  chrome  options=add_experimental_option("debuggerAddress", "127.0.0.1:9222")
-    Sleep   30s
+    Sleep   10s
     Maximize Browser Window
 
 Click Register Button
@@ -37,7 +37,9 @@ Click Register Button
     Sleep   2s
     Input Text  id=password   ${VALID_PASSWORD}
     Sleep   2s
-    Click Element    xpath=//button[@type='submit']
+    Click Element    xpath=//button[@type='submit'] 
+    Sleep   5s
+    Capture Page Screenshot    ../result/success_register.png
     Sleep   6s
     
     
@@ -54,7 +56,9 @@ Click Login Button
     Input Text  id=loginPassword   ${VALID_PASSWORD}
     Sleep   5s
     # Wait Until Element Is Visible  xpath=//button[@type='submit']    5s
-    Click Element    xpath=//button[@type='submit'] 
+    Click Element    xpath=//button[@type='submit']  
+    Sleep   5s
+    Capture Page Screenshot    ../result/success_login.png
     # wait until login is successful
     Sleep   20s
     # click refresh page
