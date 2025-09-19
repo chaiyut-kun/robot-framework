@@ -1,0 +1,9 @@
+# ignore robot framework result files
+result
+
+# ignore robot framework log files
+log.html
+output.xml
+report.html
+selenium-screenshot-*.png
+selenium-screenshot-*.jpg
